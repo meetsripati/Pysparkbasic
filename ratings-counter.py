@@ -1,3 +1,4 @@
+#pulling the the required libraries
 from pyspark import SparkConf, SparkContext
 import collections
 import matplotlib.pyplot as plt
