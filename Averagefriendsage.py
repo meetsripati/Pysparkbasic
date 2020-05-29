@@ -30,7 +30,8 @@ for key, value in sortedResults.items():
 #below command can be used for printing simple result.
 #for result in results:
     #print(result)
-
+    
+#Plotting the result on the bar chart for more visibilty.
 import matplotlib.pyplot as plt
 age = sortedResults.keys()
 friend = sortedResults.values()
