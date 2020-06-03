@@ -13,6 +13,7 @@ def parseline(line):
 lines = sc.textFile("c://sparkcourse/customer-orders.csv")
 parsedline=lines.map(parseline)
 spent = parsedline.reduceByKey(lambda x, y: (x + y))
+#in below command we are trying to sort the result by value, can be seen how using lamda function we are swapping the result when collected.
 finalspent = spent.map(lambda x:(x[1],x[0])).sortByKey().map(lambda x: (x[0],x[1])).collect()
 
 for result in finalspent:
