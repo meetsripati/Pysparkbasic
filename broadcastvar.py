@@ -1,3 +1,6 @@
+#Here setting up an example for using broadcast variable in spark, it helps in gaining data from different file.
+
+
 from pyspark import SparkConf, SparkContext
 
 
